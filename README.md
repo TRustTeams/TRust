@@ -1,5 +1,5 @@
 # TRust
-[![image](https://i.hizliresim.com/2EMz1O.png)](https://github.com/TRustTeams/TRust)
+[![image](https://i.hizliresim.com/2EMp8v.png)](https://github.com/TRustTeams/TRust)
 
 Fast server software for Minecraft: Bedrock/PE Edition and W10 Edition - v1.2.x.
 TRust is a fork of GenisysPro and SteadFast2
