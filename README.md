@@ -20,7 +20,7 @@ You can download it [here](https://app.box.com/s/nblnvrtaugrgqqxidozvgkl6iopmel9
 ### TRust Test Server
 You can test TRust before download.<br>
 IP: **oyna.minecraftpetr.net**<br>
-PORT: **19132**<br> <br>
+PORT: **19132**<br>
 
 IP: **oyna.blueturk.net**<br>
 PORT: **19132**<br>
