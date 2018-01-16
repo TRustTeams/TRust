@@ -27,23 +27,9 @@ PORT: **19132**<br>
 
 
 # Features:
-- [x] DarkSystem is **# 1** about speed & no-lag.
+- [x] TRust is **# 1** about speed & no-lag.
 - [x] Based on **old** PocketMine-MP for best performance and stability.
-- [x] Loads chunks region-to-region.
-  * It uses less CPU resources & loads chunks fast.
-- [x] Cached chunk loading
   * Loads chunks and levels with cache for speed.
-- [x] MobAI Support
-  * Almost all mobs can move & attack.
-  * Support Attacking Movement.
-- [x] Smooth Movement
-  * Players don't glitch or clip through the floor (if they are not in 1.2) while moving.
-  * Does not throw players back.
-- [x] MCPE 1.2 Support
-  * DarkSystem is compatible with MC: Bedrock Edition/Better together update (1.2).
-- [x] More Biomes & Advanced Generator
-  * DarkSystem supports too many biomes.
-  * DarkSystem loads levels fast.
 
 # TODO List:
 - Checked item boxes mean we are working on them or they are in-dev, empty mean that will we work soon on them!
