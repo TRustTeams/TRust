@@ -1,26 +1,103 @@
-# TRust
-[![image](https://i.hizliresim.com/2EMp8v.png)](https://github.com/TRustTeams/TRust)
+# TRustTeams Software
+<img src="https://i.hizliresim.com/2EMp8v.png" alt="https://github.com/TRustTeams/TRust" title="Aimeos" align="center" height="105">
 
-Fast server software for Minecraft: Bedrock/PE Edition and W10 Edition - v1.2.x.
-TRust is a fork of GenisysPro and SteadFast2
 
-|       Phar            |      Discord          | <br>
- [![Download](https://img.shields.io/badge/download-latest-blue.svg)](https://pocket-mp.net) | [![Discord](https://camo.githubusercontent.com/455152269a0ed38255ed15e375084d4dd08e0c98/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636861742d6f6e253230646973636f72642d3732383944412e737667)](https://discord.gg/DmV26sg) |
+**TRust Server Software for Minecraft: Bedrock/PE Edition and W10 Edition - v1.2.x**
 
--------------
-## Can I test it before I download it?
-Yes, you can! <br>
-Do you want to play in the MCPETRTeam Server?
+[![License](https://img.shields.io/github/license/TRustTeams/TRust.svg)](https://github.com/TRustTeams/TRust/blob/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/TRustTeams/TRust.svg)](https://github.com/TRustTeams/TRust/graphs/contributors)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/TRustTeams/TRust.svg)](http://isitmaintained.com/project/TRustTeams/TRust "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/TRustTeams/TRust.svg)](http://isitmaintained.com/project/TRustTeams/TRust "Percentage of issues still open")
 
-IP: **oyna.minecraftpetr.net**  
-Port: **19132**
-Version: **1.2.x**
+| Direct Phar Download | Travis CI | Discord Chat Server |
+| :---: | :---: | :---: |
+[![Download](https://img.shields.io/badge/download-latest-blue.svg)](https://pocket-mp.com) | [![Build Status](https://travis-ci.org/DarkSystem-PE/DarkSystem.svg?branch=master)](https://travis-ci.org/TRustTeams/TRust) | [![Discord](https://camo.githubusercontent.com/455152269a0ed38255ed15e375084d4dd08e0c98/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636861742d6f6e253230646973636f72642d3732383944412e737667)](https://discord.gg/DmV26sg) | 
 
--------------
+### TRust Special Android APP
+You can download it [here](https://app.box.com/s/nblnvrtaugrgqqxidozvgkl6iopmel9e).<br>
+**NOTE:** Language of app is Turkish, does not support English. Will be added soon.<br>
 
-## Contact us for any faults or bugs found
-- Discord:
-- Facebook:
+### TRust Test Server
+You can test TRust before download.<br>
+IP: **oyna.minecraftpetr.net**<br>
+PORT: **19132**<br> <br>
 
-# Finished & Planned Features
--[#] - > Basic thrown for 1.2.x
+IP: **oyna.blueturk.net**<br>
+PORT: **19132**<br>
+
+
+# Features:
+- [x] DarkSystem is **# 1** about speed & no-lag.
+- [x] Based on **old** PocketMine-MP for best performance and stability.
+- [x] Loads chunks region-to-region.
+  * It uses less CPU resources & loads chunks fast.
+- [x] Cached chunk loading
+  * Loads chunks and levels with cache for speed.
+- [x] MobAI Support
+  * Almost all mobs can move & attack.
+  * Support Attacking Movement.
+- [x] Smooth Movement
+  * Players don't glitch or clip through the floor (if they are not in 1.2) while moving.
+  * Does not throw players back.
+- [x] MCPE 1.2 Support
+  * DarkSystem is compatible with MC: Bedrock Edition/Better together update (1.2).
+- [x] More Biomes & Advanced Generator
+  * DarkSystem supports too many biomes.
+  * DarkSystem loads levels fast.
+
+# TODO List:
+- Checked item boxes mean we are working on them or they are in-dev, empty mean that will we work soon on them!
+- [ ] **Command Block (indev)**
+- [x] **Experience System (working)**
+- [ ] **Map**
+- [ ] **Horse**
+- [ ] **Fireworks (%30)**
+- [ ] **Armor Stand (%75)**
+- [ ] **Throwing Potions**
+- [x] **Writable & Written Books**
+- [x] **Fully Working CustomUI**
+- [ ] **Riding Minecart and Boat**
+- [ ] **Fully Redstone System**
+- [x] **Multi-Language**
+- [x] **Mob Spawner**
+- [x] **Item Frame**
+
+# Known Bugs:
+- Respawn and Movement bug on 1.2
+
+# Get TRust:
+- Download the Android APK: [PocketC](https://app.box.com/s/nblnvrtaugrgqqxidozvgkl6iopmel9e).
+- PHP Binaries [here](https://github.com/LeverylTeam/PHP7-Binaries).
+- Website: COMING SOON
+
+# Tools:
+- [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Plugin and server development tools plugin
+- [Pocket Server](https://github.com/fengberd/MinecraftPEServer) - Run TRust on Android devices
+- [TRust Android APP](https://app.box.com/s/nblnvrtaugrgqqxidozvgkl6iopmel9e) - TRust Android APP for Android
+
+# Converting to .phar
+**METHOD 1**
+- Download DevTools plugin.
+- Start your server 
+- Run `makeserver` command in the console.
+
+It will drop a .phar file into DevTools data folder.
+
+**METHOD 2**<br>
+`COMING SOON`
+
+# License:
+```
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+```
