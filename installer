@@ -1,0 +1,130 @@
+#!/bin/bash
+
+linux_php_32="PHP7.tar.gz https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.6_x86_Linux.tar.gz"
+linux_php_64="PHP7.tar.gz https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.6_x86-64_Linux.tar.gz"
+osx_php_32="PHP7.tar.gz https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.3_x86_MacOS.tar.gz"
+osx_php_64="PHP7.tar.gz https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.3_x86-64_MacOS.tar.gz"
+
+echo "[TRust Teams] indirmek istediginize eminmisiniz ?"
+echo "(e)vet, (h)ayır"
+read i
+
+if [ "$i" == evet ] || [ "$i" == e ]
+ then
+ clear
+ echo "[TRust Teams] Data Yükleniyor..."
+  sleep 1
+ echo "[TRust Teams] Yüklendi!"
+  sleep 1
+ echo "[TRust Teams] Dosyalar İndiriliyor..." 
+ 
+if [ -e "start.sh" ]
+ then
+ echo "[T] 'Start.sh' dosyası indirilemedi! Dosya zaten var!"
+else
+ wget 'https://raw.githubusercontent.com/TRustTeams/TRust/master/start.sh'
+ chmod +x start.sh
+fi  
+
+if [ -d "bin/php7" ]
+ then
+ echo "[TRust Teams] PHP Atlandı, Zaten Yüklendi.";
+ echo "PHP'yi güncellemek istiyorsanız, bin klasörünü silin ve bu dosyayı tekrar çalıştırın."
+else
+ echo "[TRust Teams] $OSTYPE $(uname -m) Çalışıyor, PHP İndiriliyor..."
+//Linux
+if [ $(uname -m) == x86_64 ] && [ $OSTYPE == linux-gnu ]
+ then
+ wget -O $linux_php_64 --no-check-certificate
+ tar -xf PHP7.tar.gz
+ echo "PHP İndiriliyor x86-64"
+  sleep 5
+fi
+if [ $(uname -m) == x86 ] && [ $OSTYPE == linux-gnu ]
+ then
+ wget -O $linux_php_32 --no-check-certificate
+ tar -xf PHP7.tar.gz
+ echo "PHP İndiriliyor x86"
+  sleep 5
+ fi
+//OSX
+if [ $(uname -m) == x86_64 ] && [ $OSTYPE == darwin ]
+ then
+ wget -O $osx_php_64 --no-check-certificate
+ tar -xf PHP7.tar.gz
+ echo "PHP İndiriliyor x86-64"
+  sleep 5
+fi
+if [ $(uname -m) == x86 ] && [ $OSTYPE == darwin ]
+ then
+ wget -O $osx_php_32 --no-check-certificate
+ tar -xf PHP7.tar.gz
+ echo "PHP İndiriliyor x86"
+  sleep 5
+ fi
+fi  
+
+if [ ! -d "src" ]
+ then
+ clear
+ echo "[TRust Teams] Trust Son Sürüm İndiriliyor..."
+  sleep 1
+ git clone https://github.com/TRustTeams/Trust.git
+ mv -i ./Trust/src/ ./
+  sleep 1
+ echo "[TRust Teams] İndirme Başarılı!"
+  clear
+fi
+
+ echo "Başarılı!"
+if [ -d "bin/php7" ] && [ -d "src" ] && [ -e "start.sh" ]
+ then
+ rm PHP7.tar.gz
+ rm -rf Trust/
+ echo "Sunucuyu Şimdi Başlatmak İstermisin?"
+ echo "(e)vet (h)ayır"
+read a
+if [ "$a" == evet ] || [ "$a" == e ]
+ then 
+ clear
+ sleep 2 
+ echo "Başlatılıyor..."
+ ./start.sh
+fi
+if [ "$a" == hayır ] || [ "$a" == h ]
+ then 
+ echo "[TRust Teams] Yükleyici Durduruldu"
+ sleep 2
+ echo "[TRust Teams] Durduruldu!"
+ fi
+fi
+
+if [ ! -d "bin/php7" ]
+ then
+ echo "[Hata] Yükleme işlemi sırasında bir sorun oluştu!"
+ echo "'PHP' İndirilemedi"
+ echo "Install.sh dosyasını tekrar çalıştırmayı deneyin, bu hatayı tekrar görürseniz aşağıdaki bağlantıyı kullanarak bize ulaşın"
+ echo "Mail Adresimiz: trust@minecraftpetr.net"
+fi
+if [ ! -d "src" ] 
+ then
+ echo "[Hata] Yükleme işlemi sırasında bir sorun oluştu!"
+ echo "'src' İndirilemedi"
+ echo "Install.sh dosyasını tekrar çalıştırmayı deneyin, bu hatayı tekrar görürseniz aşağıdaki bağlantıyı kullanarak bize ulaşın"
+ echo "Mail Adresimiz: trust@minecraftpetr.net"
+fi 
+if [ ! -e "start.sh" ] 
+ then
+ echo "[Hata] Yükleme işlemi sırasında bir sorun oluştu!"
+ echo "'start' İndirilemedi"
+ echo "Install.sh dosyasını tekrar çalıştırmayı deneyin, bu hatayı tekrar görürseniz aşağıdaki bağlantıyı kullanarak bize ulaşın"
+ echo "Mail Adresimiz: trust@minecraftpetr.net"
+ fi
+fi
+
+if [ "$i" == hayır ] || [ "$i" == h ]
+ then 
+ echo "[TRust Teams] Yükleyici Durduruldu..."
+ sleep 2
+ echo "[TRust Teams] Durduruldu!"
+fi
