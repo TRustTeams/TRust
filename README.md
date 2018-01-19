@@ -30,11 +30,11 @@ PORT: **19132**<br>
 - [x] TRust is **# 1** about speed & no-lag.
 - [x] Based on **old** PocketMine-MP for best performance and stability.
   * Loads chunks and levels with cache for speed.
+- [x] Experience System **working**
 
 # TODO List:
 - Checked item boxes mean we are working on them or they are in-dev, empty mean that will we work soon on them!
 - [ ] **Command Block (indev)**
-- [x] **Experience System (working)**
 - [ ] **Map**
 - [ ] **Horse**
 - [ ] **Fireworks (%30)**
