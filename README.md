@@ -1,5 +1,5 @@
 # TRustTeams Software
-<img src="https://i.hizliresim.com/2EMp8v.png" alt="https://github.com/TRustTeams/TRust" title="Aimeos" align="center" height="105">
+<img src="https://i.hizliresim.com/JQpvdn.png" alt="https://github.com/TRustTeams/TRust" title="Aimeos" align="center" height="105">
 
 
 **TRust Server Software for Minecraft: Bedrock/PE Edition and W10 Edition - v1.2.x**
